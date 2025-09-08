@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #0a0a0f, #000 80%);
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, #0f0f0f, #1a0033, #0f0f0f);
+  padding: 1em;
+  text-align: center;
+  border-bottom: 3px solid #ff00ff;
+  box-shadow: 0 0 20px #ff00ff55;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffe5;
+  text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5, 0 0 40px #ff00ff;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+  }
+
+  to {
+    text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+  }
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0.5em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1.2em;
+}
+
+nav ul li a {
+  color: #ff00ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffe5;
+  text-shadow: 0 0 8px #00ffe5;
+}
+
+#hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: linear-gradient(135deg, #0a0a0f, #1a0033 70%);
+  border-bottom: 3px solid #00ffe5;
+  box-shadow: 0 0 20px #00ffe555 inset;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffe5;
+}
+
+#hero p {
+  margin: 1em 0;
+  color: #ccc;
+}
+
+#hero button {
+  margin-top: 1em;
+  background: linear-gradient(90deg, #00ffe5, #ff00ff);
+  border: none;
+  padding: 1em 2.5em;
+  color: #000;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #00ffe5;
+  transition: 0.3s;
+}
+
+#hero button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff00ff, 0 0 40px #00ffe5;
+}
+
+main {
+  padding: 3em 2em;
+}
+
+main h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffe5;
+  text-align: center;
+  margin-bottom: 1em;
+  text-shadow: 0 0 12px #00ffe5;
+}
+
+main article {
+  margin: 2em 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+ul li {
+  background: #111;
+  padding: 1.5em;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px #ff00ff55;
+  transition: 0.3s;
+  border: 2px solid #1a1a2e;
+}
+
+ul li:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #00ffe5;
+  box-shadow: 0 0 25px #00ffe5, 0 0 40px #ff00ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 3em auto;
+  background: #111;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffe5;
+}
+
+form label {
+  margin-top: 1em;
+  font-weight: bold;
+  color: #00ffe5;
+}
+
+form input {
+  padding: 0.6em;
+  margin-top: 0.5em;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #1a1a2e;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+form button {
+  margin-top: 2em;
+  padding: 1em;
+  background: linear-gradient(90deg, #ff00ff, #00ffe5);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffe5;
+}
+
+footer {
+  background: #0f0f0f;
+  text-align: center;
+  padding: 1.5em;
+  border-top: 3px solid #ff00ff;
+  box-shadow: 0 -5px 20px #00ffe555;
+  color: #888;
+}
+
+.btn-ofertas {
+  background-color: #000000;
+  color: #ff00ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#perifericos img {
+  max-width: 50%;
+  height: auto;
+}
+
+#monitores img {
+  max-width: 15%;
+  height: auto;
+}
+
+#sillas img {
+  max-width: 15%;
+  height: auto;
+}
+
+#componentes img {
+  max-width: 15%;
+  height: auto;
+}
+
+#notebooks img {
+  max-width: 15%;
+  height: auto;
+}
+
+#ofertas img {
+  max-width: 15%;
+  height: auto;
+}
+
+#map {
+  height: 400px;
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #1E90FF;
+}
+
+.titulo-eventos {
+  text-align: center;
+  color: #39FF14;
+}
+
+.descripcion-eventos {
+  text-align: center;
+  margin-bottom: 1em;
+}

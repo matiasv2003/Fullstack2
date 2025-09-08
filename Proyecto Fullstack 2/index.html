@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level-Up Gamer</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Level-Up Gamer</h1>
+    <nav>
+      <ul>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Bienvenido a la tienda gamer líder en Chile</h2>
+      <p>Explora nuestras categorías y consigue tus productos favoritos con estilo.</p>
+      <button onclick="location.href='productos.html'">Ver Catálogo</button>
+    </section>
+
+    <section id="eventos">
+      <h2 class="titulo-eventos">Mapa de Ubicaciones de Eventos Gamer</h2>
+      <p class="descripcion-eventos">Visita eventos en Chile y gana puntos <strong>LevelUp</strong>.</p>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Despacho a todo Chile | Soporte técnico vía WhatsApp</p>
+    <p>&copy; 2025 Level-Up Gamer</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+
+</html>
