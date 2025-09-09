@@ -28,6 +28,38 @@ header h1 {
   animation: glow 2s infinite alternate;
 }
 
+nav ul {
+  list-style: none;
+  margin-top: 0.5em;
+  padding: 0;
+  display: flex;             
+  gap: 1.2em;                
+  justify-content: center;   
+}
+
+nav ul button {
+  background: transparent;
+  border: none;
+  color: #ff00ff;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+nav ul button:hover {
+  color: #00ffe5;
+  text-shadow: 0 0 8px #00ffe5;
+}
+
+
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
@@ -36,23 +68,6 @@ header h1 {
   to {
     text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
   }
-}
-
-nav ul {
-  list-style: none;
-  margin-top: 0.5em;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 1.2em;
-}
-
-nav ul li a {
-  color: #ff00ff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
 nav ul li a:hover {
